@@ -12,6 +12,9 @@ body {
   list-style: none;
   padding: 0;
   margin: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
 
 .nav-items a:link,
@@ -33,6 +36,9 @@ body {
   border-radius: 10px;
   width: 400px;
   height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .child {
@@ -51,6 +57,12 @@ body {
   height: 150px;
   width: 150px;
   padding: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.child-2 {
+  flex-grow: 1;
 }
 
 /*  ---- end exercise 3 ----  */
@@ -64,10 +76,17 @@ body {
   border: 1px solid #4d7298;
   border-radius: 10px;
   width: 500px;
+  display: flex;
 }
 
 .card-text-wrapper {
   padding: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.card-text-wrapper > div:nth-child(3) {
+  flex-grow: 1;
 }
 
 .card-img {
@@ -86,6 +105,10 @@ body {
 /*  ---- start exercise 5 ----  */
 .tags {
   width: 800px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  list-style-type: none;
 }
 
 .tags li {
